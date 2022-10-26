@@ -10,9 +10,10 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
-          <Navbar.Brand className='d-flex align-items-center'
-          href="#home">
-
+        <Link to='/'>
+          <Navbar.Brand className='d-flex align-items-center'>
+            
+            
             <img
               src={logo}
               height="70"
@@ -20,8 +21,9 @@ const Header = () => {
               alt="React Bootstrap logo"
             />
             <h5>DREAM-LEARN</h5>
-
+        
           </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">

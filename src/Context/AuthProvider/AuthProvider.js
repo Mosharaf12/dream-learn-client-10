@@ -35,6 +35,9 @@ const AuthProvider = ({children}) => {
     const emailVerify = ()=>{
         return sendEmailVerification(auth.currentUser);
     }
+    const signInPop =(provider)=>{
+        return signInWithPopup(auth, provider)
+    }
 
 
     useEffect(()=>{
@@ -58,6 +61,7 @@ const AuthProvider = ({children}) => {
     const authInfo ={user,loading,
          providerLogin,logOut,createUser,
          emailVerify,setLoading,
+         signInPop,
           signIn, updateUserProfile
         }
 

@@ -1,3 +1,4 @@
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React from 'react';
 import { useState } from 'react';
 import { useContext } from 'react';
@@ -7,10 +8,14 @@ import Form from 'react-bootstrap/Form';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
+import './Register.css'
+
+const googleProvider = new GoogleAuthProvider()
+const githubProvider = new GithubAuthProvider()
 
 const Register = () => {
     const [error,setError]= useState('')
-    const {createUser,updateUserProfile,emailVerify}= useContext(AuthContext)
+    const {createUser,updateUserProfile,emailVerify,signInPop}= useContext(AuthContext)
     const [accepted, setAccepted]= useState(false);
 
     const handleRegister=(event)=>{
@@ -68,7 +73,28 @@ const Register = () => {
         })
     }
 
+    const googleHandle=()=>{
+        signInPop(googleProvider)
+        .then(result=>{
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error=>{
+            console.error(error);
+        })
 
+    }
+    const githubHandle=()=>{
+        signInPop(githubProvider)
+        .then(result=>{
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(error=>{
+            console.error(error);
+        })
+
+    }
     
 
     return (
@@ -104,9 +130,9 @@ const Register = () => {
             </Button>
             {error}
         </Form>
-        <ButtonGroup vertical>
-                <Button  className='mb-2' variant="outline-primary"> <FaGoogle></FaGoogle> Login With Google</Button>
-                <Button variant="outline-dark"> <FaGithub></FaGithub> Login With Github</Button>
+        <ButtonGroup vertical className='loginButton mt-3' >
+                <Button onClick={googleHandle} className='mb-2 loginButton' variant="outline-primary"> <FaGoogle></FaGoogle> Login With Google</Button>
+                <Button onClick={githubHandle} className='loginButton mb-2' variant="outline-dark"> <FaGithub></FaGithub> Login With Github</Button>
             </ButtonGroup>
         </div>
     );

@@ -1,5 +1,6 @@
 import Main from "../../layout/Main";
 import Blog from "../../pages/Blog/Blog";
+import CheckOut from "../../pages/CheckOut/CheckOut";
 import Courses from "../../pages/Courses/Courses";
 import Faq from "../../pages/Faq/Faq";
 import Home from "../../pages/Home/Home";
@@ -44,6 +45,11 @@ export const routers = createBrowserRouter([
             {
                 path:'/register',
                 element: <Register></Register>
+            },
+            {
+                path:'/checkout/:id',
+                loader:({params})=> fetch(`http://localhost:5000/category/${params.id}`),
+                element: <CheckOut></CheckOut>
             }
         ]
     }

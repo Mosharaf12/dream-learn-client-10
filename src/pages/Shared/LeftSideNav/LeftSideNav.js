@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './LeftSideNav.css'
 
 const LeftSideNav = () => {
     const [categories, setCategories]=useState([])
@@ -17,7 +18,7 @@ const LeftSideNav = () => {
             {
                 categories.map(category=> <p key={category.id}
                 
-                > <Link to={`/course/${category.id}`}>{category.title}</Link> </p> )
+                > <Link className='sideLink btn btn-outline-primary' to={`/course/${category.id}`}>{category.title}</Link> </p> )
             }
            
         </div>

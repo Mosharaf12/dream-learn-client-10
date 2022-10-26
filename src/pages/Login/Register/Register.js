@@ -1,8 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import { useContext } from 'react';
+import { ButtonGroup } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
@@ -70,7 +72,8 @@ const Register = () => {
     
 
     return (
-        <Form onSubmit={handleRegister}>
+        <div>
+            <Form onSubmit={handleRegister}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="text" name='name' placeholder="Enter name" />
@@ -101,6 +104,11 @@ const Register = () => {
             </Button>
             {error}
         </Form>
+        <ButtonGroup vertical>
+                <Button  className='mb-2' variant="outline-primary"> <FaGoogle></FaGoogle> Login With Google</Button>
+                <Button variant="outline-dark"> <FaGithub></FaGithub> Login With Github</Button>
+            </ButtonGroup>
+        </div>
     );
 };
 

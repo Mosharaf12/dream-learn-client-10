@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
-        <Link to='/'>
+        <Link to='/' className='title'>
           <Navbar.Brand className='d-flex align-items-center'>
             
             
@@ -50,18 +50,18 @@ const Header = () => {
               </div>
               
             </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets
+            <Nav className='d-flex align-items-center'>
+              <Nav.Link>
                       { 
                             user?.uid ?
                             <>
                             <span> {user?.displayName}</span>
-                            <button onClick={logHandler}>Log Out</button>
+                            <button className='btn btn-primary mx-2' onClick={logHandler}>Log Out</button>
                             </>
                             :
                             <>
-                            <Link to='/login'>Login</Link>
-                            <Link to='/register'>Register</Link>
+                            <Link className='btn btn-warning me-2' to='/login'>Login</Link>
+                            <Link className='btn btn-primary' to='/register'>Register</Link>
                             </>
                            }
 

@@ -1,6 +1,6 @@
 .navbar-css{
     background-color: #65ced3;
-    height: 60px;
+    min-height: 60px;
     margin-bottom: 20px;
 
 }

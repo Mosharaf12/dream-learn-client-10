@@ -32,7 +32,7 @@ const Header = () => {
 
             <img
               src={logo}
-              height="70"
+              height="45px"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />

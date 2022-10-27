@@ -12,11 +12,6 @@ const AuthProvider = ({children}) => {
 
     const [user,setUser]= useState(null);
     const [loading, setLoading]= useState(true);
-
-    const providerLogin = (provider)=>{
-        setLoading(true);
-        return signInWithPopup(auth, provider)
-    }
     const logOut =()=>{
         setLoading(true);
         return signOut(auth)
@@ -30,12 +25,15 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
     const updateUserProfile =(profile)=>{
+        setLoading(true);
         return updateProfile(auth.currentUser,profile)
     }
     const emailVerify = ()=>{
+        setLoading(true);
         return sendEmailVerification(auth.currentUser);
     }
     const signInPop =(provider)=>{
+        setLoading(true);
         return signInWithPopup(auth, provider)
     }
 
@@ -55,7 +53,7 @@ const AuthProvider = ({children}) => {
     },[])
 
     const authInfo ={user,loading,
-         providerLogin,logOut,createUser,
+         logOut,createUser,
          emailVerify,setLoading,
          signInPop,
           signIn, updateUserProfile

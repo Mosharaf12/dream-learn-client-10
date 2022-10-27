@@ -20,7 +20,7 @@ export const routers = createBrowserRouter([
         children:[
             {
                 path:'/',
-                loader:()=> fetch(`http://localhost:5000/courses`),
+                loader:()=> fetch(`https://dream-learn.vercel.app/courses`),
                 element: <Home></Home>
             },
             {
@@ -37,7 +37,7 @@ export const routers = createBrowserRouter([
             },
             {
                 path:'/course/:id',
-                loader:({params})=> fetch(`http://localhost:5000/category/${params.id}`),
+                loader:({params})=> fetch(`https://dream-learn.vercel.app/category/${params.id}`),
                 element:<Courses></Courses>
 
             },
@@ -51,7 +51,7 @@ export const routers = createBrowserRouter([
             },
             {
                 path:'/checkout/:id',
-                loader:({params})=> fetch(`http://localhost:5000/category/${params.id}`),
+                loader:({params})=> fetch(`https://dream-learn.vercel.app/category/${params.id}`),
                 element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
             }
         ]

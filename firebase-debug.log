@@ -1,0 +1,161 @@
+[debug] [2022-10-27T16:28:53.284Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T16:28:53.287Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mosharaf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-27T16:28:53.287Z] CLI Version:   11.14.4
+[debug] [2022-10-27T16:28:53.288Z] Platform:      win32
+[debug] [2022-10-27T16:28:53.288Z] Node Version:  v16.15.1
+[debug] [2022-10-27T16:28:53.297Z] Time:          Thu Oct 27 2022 22:28:53 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T16:28:53.297Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-27T16:28:53.393Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-27T16:28:53.394Z] > authorizing via signed-in user (mosharafctg111@gmail.com)
+[debug] [2022-10-27T16:28:53.394Z] [iam] checking project online-education-client for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-27T16:28:53.397Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions [none]
+[debug] [2022-10-27T16:28:53.397Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions x-goog-quota-user=projects/online-education-client
+[debug] [2022-10-27T16:28:53.398Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-27T16:28:55.422Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions 200
+[debug] [2022-10-27T16:28:55.423Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-27T16:28:55.426Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/online-education-client [none]
+[debug] [2022-10-27T16:29:16.601Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/online-education-client
+[debug] [2022-10-27T16:29:17.155Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/online-education-client
+    at RetryOperation._fn (C:\Users\mosharaf\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project online-education-client. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-10-27T16:32:39.193Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T16:32:39.195Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mosharaf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-27T16:32:39.196Z] CLI Version:   11.14.4
+[debug] [2022-10-27T16:32:39.196Z] Platform:      win32
+[debug] [2022-10-27T16:32:39.196Z] Node Version:  v16.15.1
+[debug] [2022-10-27T16:32:39.197Z] Time:          Thu Oct 27 2022 22:32:39 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-27T16:32:39.198Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-27T16:32:39.304Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-27T16:32:39.304Z] > authorizing via signed-in user (mosharafctg111@gmail.com)
+[debug] [2022-10-27T16:32:39.304Z] [iam] checking project online-education-client for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-27T16:32:39.307Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions [none]
+[debug] [2022-10-27T16:32:39.308Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions x-goog-quota-user=projects/online-education-client
+[debug] [2022-10-27T16:32:39.308Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-27T16:32:39.870Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions 200
+[debug] [2022-10-27T16:32:39.871Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-education-client:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-27T16:32:39.874Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/online-education-client [none]
+[debug] [2022-10-27T16:32:40.401Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/online-education-client 200
+[debug] [2022-10-27T16:32:40.402Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/online-education-client {"projectId":"online-education-client","projectNumber":"347805784315","displayName":"online-education-client","name":"projects/online-education-client","resources":{"hostingSite":"online-education-client"},"state":"ACTIVE","etag":"1_f3cb5246-2238-4235-914a-5d073a5370b4"}
+[info] 
+[info] === Deploying to 'online-education-client'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-10-27T16:32:40.409Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions [none]
+[debug] [2022-10-27T16:32:40.409Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-27T16:32:42.565Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions 200
+[debug] [2022-10-27T16:32:42.566Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions {"name":"projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[online-education-client]: beginning deploy... 
+[info] i  hosting[online-education-client]: found 16 files in build 
+[debug] [2022-10-27T16:32:42.593Z] [hosting] uploading with 200 concurrency
+[debug] [2022-10-27T16:32:42.594Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2022-10-27T16:32:43.053Z] [hosting] hash cache [YnVpbGQ] stored for 16 files
+[debug] [2022-10-27T16:32:43.053Z] [hosting][hash queue][FINAL] {"max":441,"min":26,"avg":68.3125,"active":0,"complete":16,"success":16,"errored":0,"retried":0,"total":16,"elapsed":452}
+[debug] [2022-10-27T16:32:43.054Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2:populateFiles [none]
+[debug] [2022-10-27T16:32:43.054Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2:populateFiles {"files":{"/asset-manifest.json":"c3ee1b2abe02f209383bf25940a4d6db597ebe2b7e1fcd9880393ab552423232","/index.html":"aaace60cd42137dd1564e8bef6ff4b1e355732b1a6979308596ba78ba3e2b59b","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/js/787.414c2927.chunk.js.map":"4a7d4acd61cd8c5d83c30f2c5cff1035343e5894a41c2f46200739e291121a38","/static/js/main.ac4fb666.js.LICENSE.txt":"e663a9d8b1fdc04d64297d4adddf55d3fc58ff01bbfdd4a1a1a7a8fbc31fbc36","/static/js/787.414c2927.chunk.js":"5b45c15e0e04c801cfcb24efbd2308f88c513c597ff2075adadc4efd66a1098d","/_redirects":"d2852673ebc4f64ad8cd5a583a5bd5c10830588cc12e3aa8423fac474b78713d","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/static/media/logo.3c076de8e0e1261ead99.png":"7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad","/static/css/main.ee53b0e2.css":"7ee547c81fb8acfcf47df199d54c2ee138965c6afda369d05bd91b8515d7b289","/favicon.ico":"7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/static/js/main.ac4fb666.js":"ad48f94bfc31e5f18a5a936cc0f4ba534c2d0c312037fa4335e64fb55fc3332c","/static/css/main.ee53b0e2.css.map":"11449c3ca2036c17e4d65de7e0b748dd1471917189267dc28951e43bf49309d7","/static/js/main.ac4fb666.js.map":"c7b20e5ee652e3f1aa92d7847b14f3c13078ae4859956cd62012bda5d29e34df"}}
+[debug] [2022-10-27T16:32:44.202Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2:populateFiles 200
+[debug] [2022-10-27T16:32:44.202Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2:populateFiles {"uploadRequiredHashes":["3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","5b45c15e0e04c801cfcb24efbd2308f88c513c597ff2075adadc4efd66a1098d","c7b20e5ee652e3f1aa92d7847b14f3c13078ae4859956cd62012bda5d29e34df","aaace60cd42137dd1564e8bef6ff4b1e355732b1a6979308596ba78ba3e2b59b","7ee547c81fb8acfcf47df199d54c2ee138965c6afda369d05bd91b8515d7b289","4a7d4acd61cd8c5d83c30f2c5cff1035343e5894a41c2f46200739e291121a38","ad48f94bfc31e5f18a5a936cc0f4ba534c2d0c312037fa4335e64fb55fc3332c","c3ee1b2abe02f209383bf25940a4d6db597ebe2b7e1fcd9880393ab552423232","e663a9d8b1fdc04d64297d4adddf55d3fc58ff01bbfdd4a1a1a7a8fbc31fbc36","bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad","ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","d2852673ebc4f64ad8cd5a583a5bd5c10830588cc12e3aa8423fac474b78713d","11449c3ca2036c17e4d65de7e0b748dd1471917189267dc28951e43bf49309d7"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files"}
+[debug] [2022-10-27T16:32:44.206Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [none]
+[debug] [2022-10-27T16:32:44.206Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2022-10-27T16:32:44.208Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2022-10-27T16:32:44.208Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-10-27T16:32:44.210Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/5b45c15e0e04c801cfcb24efbd2308f88c513c597ff2075adadc4efd66a1098d [none]
+[debug] [2022-10-27T16:32:44.210Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/5b45c15e0e04c801cfcb24efbd2308f88c513c597ff2075adadc4efd66a1098d [stream]
+[debug] [2022-10-27T16:32:44.211Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c7b20e5ee652e3f1aa92d7847b14f3c13078ae4859956cd62012bda5d29e34df [none]
+[debug] [2022-10-27T16:32:44.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c7b20e5ee652e3f1aa92d7847b14f3c13078ae4859956cd62012bda5d29e34df [stream]
+[debug] [2022-10-27T16:32:44.213Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aaace60cd42137dd1564e8bef6ff4b1e355732b1a6979308596ba78ba3e2b59b [none]
+[debug] [2022-10-27T16:32:44.213Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aaace60cd42137dd1564e8bef6ff4b1e355732b1a6979308596ba78ba3e2b59b [stream]
+[debug] [2022-10-27T16:32:44.215Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7ee547c81fb8acfcf47df199d54c2ee138965c6afda369d05bd91b8515d7b289 [none]
+[debug] [2022-10-27T16:32:44.215Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7ee547c81fb8acfcf47df199d54c2ee138965c6afda369d05bd91b8515d7b289 [stream]
+[debug] [2022-10-27T16:32:44.216Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/4a7d4acd61cd8c5d83c30f2c5cff1035343e5894a41c2f46200739e291121a38 [none]
+[debug] [2022-10-27T16:32:44.217Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/4a7d4acd61cd8c5d83c30f2c5cff1035343e5894a41c2f46200739e291121a38 [stream]
+[debug] [2022-10-27T16:32:44.218Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ad48f94bfc31e5f18a5a936cc0f4ba534c2d0c312037fa4335e64fb55fc3332c [none]
+[debug] [2022-10-27T16:32:44.218Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ad48f94bfc31e5f18a5a936cc0f4ba534c2d0c312037fa4335e64fb55fc3332c [stream]
+[debug] [2022-10-27T16:32:44.220Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c3ee1b2abe02f209383bf25940a4d6db597ebe2b7e1fcd9880393ab552423232 [none]
+[debug] [2022-10-27T16:32:44.220Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c3ee1b2abe02f209383bf25940a4d6db597ebe2b7e1fcd9880393ab552423232 [stream]
+[debug] [2022-10-27T16:32:44.222Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/e663a9d8b1fdc04d64297d4adddf55d3fc58ff01bbfdd4a1a1a7a8fbc31fbc36 [none]
+[debug] [2022-10-27T16:32:44.222Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/e663a9d8b1fdc04d64297d4adddf55d3fc58ff01bbfdd4a1a1a7a8fbc31fbc36 [stream]
+[debug] [2022-10-27T16:32:44.223Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2022-10-27T16:32:44.223Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2022-10-27T16:32:44.225Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad [none]
+[debug] [2022-10-27T16:32:44.225Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad [stream]
+[debug] [2022-10-27T16:32:44.226Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [none]
+[debug] [2022-10-27T16:32:44.226Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2022-10-27T16:32:44.228Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/d2852673ebc4f64ad8cd5a583a5bd5c10830588cc12e3aa8423fac474b78713d [none]
+[debug] [2022-10-27T16:32:44.228Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/d2852673ebc4f64ad8cd5a583a5bd5c10830588cc12e3aa8423fac474b78713d [stream]
+[debug] [2022-10-27T16:32:44.232Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/11449c3ca2036c17e4d65de7e0b748dd1471917189267dc28951e43bf49309d7 [none]
+[debug] [2022-10-27T16:32:44.232Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/11449c3ca2036c17e4d65de7e0b748dd1471917189267dc28951e43bf49309d7 [stream]
+[debug] [2022-10-27T16:32:44.234Z] [hosting][populate queue][FINAL] {"max":1155,"min":1155,"avg":1155,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1183}
+[debug] [2022-10-27T16:32:44.234Z] [hosting] uploads queued: 15
+[debug] [2022-10-27T16:32:46.290Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2022-10-27T16:32:46.291Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2022-10-27T16:32:46.357Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2022-10-27T16:32:46.357Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2022-10-27T16:32:46.639Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/11449c3ca2036c17e4d65de7e0b748dd1471917189267dc28951e43bf49309d7 200
+[debug] [2022-10-27T16:32:46.639Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/11449c3ca2036c17e4d65de7e0b748dd1471917189267dc28951e43bf49309d7 [stream]
+[debug] [2022-10-27T16:32:46.710Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c3ee1b2abe02f209383bf25940a4d6db597ebe2b7e1fcd9880393ab552423232 200
+[debug] [2022-10-27T16:32:46.710Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c3ee1b2abe02f209383bf25940a4d6db597ebe2b7e1fcd9880393ab552423232 [stream]
+[debug] [2022-10-27T16:32:46.893Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/4a7d4acd61cd8c5d83c30f2c5cff1035343e5894a41c2f46200739e291121a38 200
+[debug] [2022-10-27T16:32:46.893Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/4a7d4acd61cd8c5d83c30f2c5cff1035343e5894a41c2f46200739e291121a38 [stream]
+[debug] [2022-10-27T16:32:46.905Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 200
+[debug] [2022-10-27T16:32:46.906Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2022-10-27T16:32:46.911Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b 200
+[debug] [2022-10-27T16:32:46.911Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2022-10-27T16:32:47.004Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/d2852673ebc4f64ad8cd5a583a5bd5c10830588cc12e3aa8423fac474b78713d 200
+[debug] [2022-10-27T16:32:47.004Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/d2852673ebc4f64ad8cd5a583a5bd5c10830588cc12e3aa8423fac474b78713d [stream]
+[debug] [2022-10-27T16:32:47.170Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7ee547c81fb8acfcf47df199d54c2ee138965c6afda369d05bd91b8515d7b289 200
+[debug] [2022-10-27T16:32:47.170Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7ee547c81fb8acfcf47df199d54c2ee138965c6afda369d05bd91b8515d7b289 [stream]
+[debug] [2022-10-27T16:32:47.195Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad 200
+[debug] [2022-10-27T16:32:47.195Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/7698f1ca4db0b9de7279b000311df35865fa18b88f461e40cb837e1d1a1df7ad [stream]
+[debug] [2022-10-27T16:32:47.281Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/e663a9d8b1fdc04d64297d4adddf55d3fc58ff01bbfdd4a1a1a7a8fbc31fbc36 200
+[debug] [2022-10-27T16:32:47.281Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/e663a9d8b1fdc04d64297d4adddf55d3fc58ff01bbfdd4a1a1a7a8fbc31fbc36 [stream]
+[debug] [2022-10-27T16:32:47.518Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aaace60cd42137dd1564e8bef6ff4b1e355732b1a6979308596ba78ba3e2b59b 200
+[debug] [2022-10-27T16:32:47.518Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/aaace60cd42137dd1564e8bef6ff4b1e355732b1a6979308596ba78ba3e2b59b [stream]
+[debug] [2022-10-27T16:32:47.529Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/5b45c15e0e04c801cfcb24efbd2308f88c513c597ff2075adadc4efd66a1098d 200
+[debug] [2022-10-27T16:32:47.529Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/5b45c15e0e04c801cfcb24efbd2308f88c513c597ff2075adadc4efd66a1098d [stream]
+[debug] [2022-10-27T16:32:47.585Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c7b20e5ee652e3f1aa92d7847b14f3c13078ae4859956cd62012bda5d29e34df 200
+[debug] [2022-10-27T16:32:47.585Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/c7b20e5ee652e3f1aa92d7847b14f3c13078ae4859956cd62012bda5d29e34df [stream]
+[debug] [2022-10-27T16:32:48.415Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ad48f94bfc31e5f18a5a936cc0f4ba534c2d0c312037fa4335e64fb55fc3332c 200
+[debug] [2022-10-27T16:32:48.416Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/online-education-client/versions/5fbd2fe6ceed91f2/files/ad48f94bfc31e5f18a5a936cc0f4ba534c2d0c312037fa4335e64fb55fc3332c [stream]
+[debug] [2022-10-27T16:32:48.416Z] [hosting][upload queue][FINAL] {"max":4212,"min":2086,"avg":2889.866666666667,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":4213}
+[info] +  hosting[online-education-client]: file upload complete 
+[debug] [2022-10-27T16:32:48.418Z] [hosting] deploy completed after 5848ms
+[debug] [2022-10-27T16:32:48.426Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "online-education-client"
+    },
+    "version": "projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2"
+  }
+]
+[info] i  hosting[online-education-client]: finalizing version... 
+[debug] [2022-10-27T16:32:48.434Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions/5fbd2fe6ceed91f2 updateMask=status%2Cconfig
+[debug] [2022-10-27T16:32:48.435Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions/5fbd2fe6ceed91f2 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-10-27T16:32:49.681Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions/5fbd2fe6ceed91f2 200
+[debug] [2022-10-27T16:32:49.682Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/versions/5fbd2fe6ceed91f2 {"name":"projects/347805784315/sites/online-education-client/versions/5fbd2fe6ceed91f2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-27T16:32:39.592071Z","createUser":{"email":"mosharafctg111@gmail.com"},"finalizeTime":"2022-10-27T16:32:47.726346Z","finalizeUser":{"email":"mosharafctg111@gmail.com"}}
+[debug] [2022-10-27T16:32:49.682Z] [hosting] finalized version for online-education-client:[object Object]
+[info] +  hosting[online-education-client]: version finalized 
+[info] i  hosting[online-education-client]: releasing new version... 
+[debug] [2022-10-27T16:32:49.684Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/channels/live/releases versionName=projects%2F347805784315%2Fsites%2Fonline-education-client%2Fversions%2F5fbd2fe6ceed91f2
+[debug] [2022-10-27T16:32:49.685Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-education-client/channels/live/releases {}
+[debug] [2022-10-27T16:33:16.490Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\mosharaf\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.

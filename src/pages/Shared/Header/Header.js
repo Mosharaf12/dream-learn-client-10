@@ -9,6 +9,10 @@ import logo from '../../../Assets/images/logo.png'
 import { FaUser } from 'react-icons/fa';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import './Header.css'
+import Switch from '@mui/material/Switch';
+
+
+const label = { inputProps: { 'aria-label': 'Switch demo' } }
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext)
@@ -47,6 +51,7 @@ const Header = () => {
               <Link className='itemList text-white fw-semibold' to='/'>Courses</Link>
               <Link className='itemList text-white fw-semibold' to='/faq'>FAQ</Link>
               <Link className='itemList text-white fw-semibold' to='/blog'>Blog</Link>
+              <Switch {...label} defaultChecked />
             </div>
 
           </Nav>
@@ -74,6 +79,7 @@ const Header = () => {
 
                     style={{ height: '30px' }} roundedCircle
                     src={user.photoURL}
+                    title={user.displayName}
 
                   ></Image>
                   : <FaUser></FaUser>

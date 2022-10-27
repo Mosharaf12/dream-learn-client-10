@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
+import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className='p-5 bg-primary mt-5'>
+        <div className='p-5 mt-5 footer'>
             <div className='p-5'>
                 <h4 className='text-white text-center'>©Copyright 2022 || All rights Reserved by <span className='text-dark'>Mosharaf Hossain</span> </h4>
                <div className='d-flex text-center justify-content-center'>

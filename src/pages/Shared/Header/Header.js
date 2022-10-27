@@ -11,25 +11,25 @@ import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import './Header.css'
 
 const Header = () => {
-    const {user,logOut}=useContext(AuthContext)
-    console.log(user);
-    const logHandler=()=>{
-        logOut()
-        .then(()=>{
+  const { user, logOut } = useContext(AuthContext)
+  console.log(user);
+  const logHandler = () => {
+    logOut()
+      .then(() => {
 
-        })
-        .catch((error)=>{
-            console.error(error);
-        })
-    }
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+  }
 
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-        <Container>
+  return (
+    <Navbar collapseOnSelect expand="lg" className='navbar-css'>
+      <Container>
         <Link to='/' className='title'>
           <Navbar.Brand className='d-flex align-items-center'>
-            
-            
+
+
             <img
               src={logo}
               height="70"
@@ -37,55 +37,55 @@ const Header = () => {
               alt="React Bootstrap logo"
             />
             <h5>DREAM-LEARN</h5>
-        
+
           </Navbar.Brand>
-          </Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <div>
-                <Link className='itemList' to='/'>Courses</Link>
-                <Link className='itemList' to='/faq'>FAQ</Link>
-                <Link className='itemList' to='/blog'>Blog</Link>
-              </div>
-              
-            </Nav>
-            <Nav className='d-flex align-items-center'>
-              <Nav.Link>
-                      { 
-                            user?.uid ?
-                            <>
-                            <span> {user?.displayName}</span>
-                            <button className='btn btn-primary mx-2' onClick={logHandler}>Log Out</button>
-                            </>
-                            :
-                            <>
-                            <Link className='btn btn-warning me-2' to='/login'>Login</Link>
-                            <Link className='btn btn-primary' to='/register'>Register</Link>
-                            </>
-                           }
+        </Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <div>
+              <Link className='itemList text-white fw-semibold' to='/'>Courses</Link>
+              <Link className='itemList text-white fw-semibold' to='/faq'>FAQ</Link>
+              <Link className='itemList text-white fw-semibold' to='/blog'>Blog</Link>
+            </div>
 
-              </Nav.Link>
-              <Link to='/profile'>
-                            {
-                                user?.photoURL ?
-                            
-                                <Image
+          </Nav>
+          <Nav className='d-flex align-items-center'>
+            <Nav.Link>
+              {
+                user?.uid ?
+                  <>
+                    <span> {user?.displayName}</span>
+                    <button className='btn btn-primary mx-2' onClick={logHandler}>Log Out</button>
+                  </>
+                  :
+                  <>
+                    <Link className='btn btn-warning me-2' to='/login'>Login</Link>
+                    <Link className='btn btn-primary' to='/register'>Register</Link>
+                  </>
+              }
 
-                                        style ={{height: '30px'}} roundedCircle 
-                                        src={user.photoURL}
-                                    
-                                    ></Image>
-                                : <FaUser></FaUser>
+            </Nav.Link>
+            <Link to='/profile'>
+              {
+                user?.photoURL ?
 
-                            }
+                  <Image
 
-                        </Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    );
+                    style={{ height: '30px' }} roundedCircle
+                    src={user.photoURL}
+
+                  ></Image>
+                  : <FaUser></FaUser>
+
+              }
+
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default Header;

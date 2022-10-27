@@ -12,7 +12,7 @@ const CourseDetail = ({course}) => {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
-        {about.length > 150? about.slice(0,150) + "...." : about}
+        {about.length > 150? about.slice(0,150) + "..." : about}
         </Card.Text>
       </Card.Body>
         <Link to={`/course/${_id}`}><Button style={{width:'100%'}} variant="primary">Courses Details</Button></Link>

@@ -2,10 +2,12 @@ import Main from "../../layout/Main";
 import Blog from "../../pages/Blog/Blog";
 import CheckOut from "../../pages/CheckOut/CheckOut";
 import Courses from "../../pages/Courses/Courses";
+import ErrorPage from "../../pages/ErrorPage/ErrorPage";
 import Faq from "../../pages/Faq/Faq";
 import Home from "../../pages/Home/Home";
 import Login from "../../pages/Login/Login";
 import Register from "../../pages/Login/Register/Register";
+import PrivateRoute from "../PirvateRoute/PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -14,6 +16,7 @@ export const routers = createBrowserRouter([
     {
         path:'/',
         element: <Main></Main>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:'/',
@@ -49,7 +52,7 @@ export const routers = createBrowserRouter([
             {
                 path:'/checkout/:id',
                 loader:({params})=> fetch(`http://localhost:5000/category/${params.id}`),
-                element: <CheckOut></CheckOut>
+                element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
             }
         ]
     }

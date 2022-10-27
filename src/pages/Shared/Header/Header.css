@@ -1,6 +1,12 @@
+.navbar-css{
+    background-color: #65ced3;
+    height: 60px;
+    margin-bottom: 20px;
+
+}
 .itemList{
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 5px;
 
 
 }

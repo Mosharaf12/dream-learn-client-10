@@ -40,7 +40,7 @@ const Header = () => {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-            <h5>DREAM-LEARN</h5>
+            <h5 className='text-white fw-bold'>DREAM-LEARN</h5>
 
           </Navbar.Brand>
         </Link>

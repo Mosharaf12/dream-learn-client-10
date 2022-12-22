@@ -10,8 +10,8 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 className='text-info'>PROGRAMMING LANGUAGES</h1>
+            <p>A programming language is a system of notation for writing computer programs. Most programming languages are text-based formal languages, but they may also be graphical</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -22,8 +22,8 @@ const Banner = () => {
           />
   
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1 className='text-info'>PROGRAMMING LANGUAGES</h1>
+            <p>A programming language is a system of notation for writing computer programs. Most programming languages are text-based formal languages, but they may also be graphical</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -34,10 +34,8 @@ const Banner = () => {
           />
   
           <Carousel.Caption>
-            <h2>Third slide label</h2>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+          <h1 className='text-info'>PROGRAMMING LANGUAGES</h1>
+            <p>A programming language is a system of notation for writing computer programs. Most programming languages are text-based formal languages, but they may also be graphical</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

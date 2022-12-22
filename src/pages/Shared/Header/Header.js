@@ -48,7 +48,8 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <div>
-              <Link className='itemList text-white fw-semibold' to='/'>Courses</Link>
+              <Link className='itemList text-white fw-semibold' to='/'>Home</Link>
+              <Link className='itemList text-white fw-semibold' to='/courses'>Courses</Link>
               <Link className='itemList text-white fw-semibold' to='/faq'>FAQ</Link>
               <Link className='itemList text-white fw-semibold' to='/blog'>Blog</Link>
               <Switch {...label} defaultChecked />

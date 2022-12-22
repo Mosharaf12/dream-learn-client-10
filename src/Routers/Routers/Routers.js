@@ -4,6 +4,7 @@ import CheckOut from "../../pages/CheckOut/CheckOut";
 import Courses from "../../pages/Courses/Courses";
 import ErrorPage from "../../pages/ErrorPage/ErrorPage";
 import Faq from "../../pages/Faq/Faq";
+import Banner from "../../pages/Home/Banner";
 import Home from "../../pages/Home/Home";
 import Login from "../../pages/Login/Login";
 import Register from "../../pages/Login/Register/Register";
@@ -20,11 +21,15 @@ export const routers = createBrowserRouter([
         children:[
             {
                 path:'/',
+                element: <Banner></Banner>
+            },
+            {
+                path:'/courses',
                 loader:()=> fetch(`https://dream-learn.vercel.app/courses`),
                 element: <Home></Home>
             },
             {
-                path:'/',
+                path:'/courses',
                 element: <Courses></Courses>
             },
             {
